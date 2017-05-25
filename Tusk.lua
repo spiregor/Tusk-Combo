@@ -19,7 +19,7 @@ Tusk.optionEnableBloodthorn = Menu.AddOption({ "Hero Specific","Tusk","Items"},"
 Tusk.optionEnableHalberd = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Halberd","Use Halberd In Combo")
 Tusk.optionEnableAbyssalBlade = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Abyssal Blade","Use Abyssal Blade In Combo")
 Tusk.optionEnableMjollnir = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Mjollnir","Use Mjollnir In Combo")
-Tusk.optionEnableBlink = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Blink","Use Blink In Combo")
+--Tusk.optionEnableBlink = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Blink","Use Blink In Combo")
 Tusk.optionEnableBladeMail = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Blade Mail","Use Blade Mail In Combo")
 Tusk.optionEnableBlackKingBar = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Black King Bar","Use Black King Bar In Combo")
 Tusk.optionEnableArmlet = Menu.AddOption({ "Hero Specific","Tusk","Items"},"Use Armlet of Mordiggian","Use Armlet of Mordiggian In Combo")
@@ -90,7 +90,7 @@ Tusk.Summons = {
 
 function Tusk.OnUpdate()
     if not Menu.IsEnabled(Tusk.optionEnable) then return true end
-	Log.Write(NPC.GetUnitName(Input.GetNearestUnitToCursor(Entity.GetTeamNum(Heroes.GetLocal()), Enum.TeamType.TEAM_FRIEND)))
+	--Log.Write(NPC.GetUnitName(Input.GetNearestUnitToCursor(Entity.GetTeamNum(Heroes.GetLocal()), Enum.TeamType.TEAM_FRIEND)))
 	if Menu.IsKeyDown(Tusk.optionKey)then
     Tusk.Combo()
 	end
